@@ -1,0 +1,57 @@
+{
+  "src_folders": [
+    "tests"
+  ],
+  "output_folder": "reports",
+  "page_objects_path": "",
+  "globals_path": "",
+  "selenium": {
+    "start_process": false,
+    "server_path": "",
+    "log_path": "",
+    "host": "hub.lambdatest.com",
+    "port": 80,
+    "cli_args": {
+      "webdriver.chrome.driver": "",
+      "webdriver.ie.driver": "",
+      "webdriver.firefox.profile": ""
+    }
+  },
+  "test_workers": {
+    "enabled": true,
+    "workers": "auto"
+  },
+  "test_settings": {
+    "default": {
+      "request_timeout_options": {
+        "timeout": 1000000
+      },
+      "launch_url": "https://lambdatest.com",
+      "selenium_port": 80,
+      "selenium_host": "hub.lambdatest.com",
+      "silent": false,
+      "screenshots": {
+        "enabled": true,
+        "path": ""
+      },
+      "username": "",
+      "access_key": "",
+      "skip_testcases_on_fail": false,
+      "desiredCapabilities": {
+        "LT:Options": {
+          "platformName": "Windows 10",
+          "project": "Untitled",
+          "smartUI.project": "Testing On-Boarding",
+          "w3c": true,
+          "plugin": "nightwatch_js-nightwatch_js"
+        }
+      }
+    },
+    "test1": {
+      "desiredCapabilities": {
+        "browserName": "Chrome",
+        "browserVersion": "120.0"
+      }
+    }
+  }
+}
