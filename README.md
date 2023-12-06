@@ -100,55 +100,32 @@ module.exports = (function(settings) {
 ```
 > You can generate capabilities for your test requirements with the help of our inbuilt **[Capabilities Generator tool](https://www.lambdatest.com/capabilities-generator/?utm_source=github&utm_medium=repo&utm_campaign=nightwatch-selenium-sample)**.
 
-## Executing the Test
+## Executing the SmartUI Test
 
 The tests can be executed in the terminal using the following command
 ```bash
-npm run single
+npm run smartUI
 ```
-Your test results would be displayed on the test console (or command-line interface if you are using terminal/cmd) and on [LambdaTest automation dashboard](https://automation.lambdatest.com/build/?utm_source=github&utm_medium=repo&utm_campaign=nightwatch-selenium-sample). LambdaTest Automation Dashboard will help you view all your text logs, screenshots and video recording for your entire automation tests.
+Your test results would be displayed on the test console (or command-line interface if you are using terminal/cmd) and on [LambdaTest SmartUI dashboard](https://smartui.lambdatest.com/projects/?utm_source=github&utm_medium=repo&utm_campaign=nightwatch-selenium-sample). LambdaTest Automation Dashboard will help you view all your text logs, screenshots and video recording for your entire automation tests.
 
-## Running Your Parallel Tests Using Nightwatch Framework
+## Running Your Full Page Screenshot Tests Using Nightwatch Framework
 
-### Executing Parallel Tests with Nightwatch
+### Executing Full Page Screenshot Tests with Nightwatch
 
-To run parallel tests using **Nightwatch**, we would have to execute the below command in the terminal:
+Execute the below command in the terminal:
 ```bash
-npm run parallel
+npm run smartUI-fullPage
 ```
-Your test results would be displayed on the test console (or command-line interface if you are using terminal/cmd) and on [LambdaTest automation dashboard](https://automation.lambdatest.com/build/?utm_source=github&utm_medium=repo&utm_campaign=nightwatch-selenium-sample).
 
-## Testing Locally Hosted or Privately Hosted Projects
+### Executing Ignore Dynamic HTML DOM from Screenshot Tests with Nightwatch
 
-You can test your locally hosted or privately hosted projects with [LambdaTest Selenium grid cloud](https://www.lambdatest.com/selenium-automation/?utm_source=github&utm_medium=repo&utm_campaign=nightwatch-selenium-sample) using LambdaTest Tunnel app. All you would have to do is set up an SSH tunnel using LambdaTest Tunnel app and pass toggle `tunnel = True` via desired capabilities. LambdaTest Tunnel establishes a secure SSH protocol based tunnel that allows you in testing your locally hosted or privately hosted pages, even before they are made live.
-
->Refer our [LambdaTest Tunnel documentation](https://www.lambdatest.com/support/docs/testing-locally-hosted-pages/) for more information.
-
-Here’s how you can establish LambdaTest Tunnel.
-
->Download the binary file of:
-* [LambdaTest Tunnel for Windows](https://downloads.lambdatest.com/tunnel/v3/windows/64bit/LT_Windows.zip)
-* [LambdaTest Tunnel for Mac](https://downloads.lambdatest.com/tunnel/v3/mac/64bit/LT_Mac.zip)
-* [LambdaTest Tunnel for Linux](https://downloads.lambdatest.com/tunnel/v3/linux/64bit/LT_Linux.zip)
-
-Open command prompt and navigate to the binary folder.
-
-Run the following command:
+Execute the below command in the terminal:
 ```bash
-LT -user {user’s login email} -key {user’s access key}
+npm run smartUI-ignoreDOM
 ```
-So if your user name is lambdatest@example.com and key is 123456, the command would be:
-```bash
-LT -user lambdatest@example.com -key 123456
-```
-Once you are able to connect **LambdaTest Tunnel** successfully, you would just have to pass on tunnel capabilities in the code shown below :
 
-**Tunnel Capability**
-```js
-const capabilities = {
-        tunnel: true,
-}
-```
+Your test results would be displayed on the test console (or command-line interface if you are using terminal/cmd) and on [LambdaTest SmartUI dashboard](https://smartui.lambdatest.com/projects/?utm_source=github&utm_medium=repo&utm_campaign=nightwatch-selenium-sample).
+
 
 ## Additional Links
 

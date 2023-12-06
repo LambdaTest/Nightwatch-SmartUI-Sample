@@ -40,9 +40,10 @@
       "desiredCapabilities": {
         "LT:Options": {
           "platformName": "Windows 10",
-          "project": "Untitled",
+          "build": "SmartUI - NightWatch Sample",
           "smartUI.project": "Testing On-Boarding",
           "w3c": true,
+          "selenium_version": "4.0.0",
           "plugin": "nightwatch_js-nightwatch_js"
         }
       }
